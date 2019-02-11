@@ -1,2 +1,13 @@
 # RockPaperScissors
-Rock Paper Scissors game
+
+Rock Paper Scissors Game
+
+## Instructions
+
+- Add your name
+- Choose your guess
+- See if you win
+
+
+## Notes
+

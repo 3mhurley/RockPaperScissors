@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Title -->
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <!-- JUMBO the TRON -->
+    <div id="jumboTHEtron" class="jumbotron jumbotron-fluid p-3 mb-2 bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="display-4">Rock Paper Scissors</h1>
+            <p class="lead">Rock beats Scissors beats Paper beats Rock</p>
+        </div>
+    </div>
+    <!-- Main Container -->
+    <div id="main-container" class="container-fluid text-white">
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="row">
+                    <div>
+                        <p id="userchoice-text" class="text-secondary"></p>
+                        <p id="computerchoice-text" class="text-secondary"></p>
+                        <p id="wins-text" class="text-secondary">Wins: 0</p>
+                        <p id="losses-text" class="text-secondary">Losses: 0</p>
+                        <p id="ties-text" class="text-secondary">Ties: 0</p>
+                        <p id="connected-viewers" class="text-secondary">Viewers: 0</p>
+                        <p id="winning-guesser" class="text-secondary">Winner: None so far</p>
+                        <p id="winning-guess" class="text-secondary">Result: None so far</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="guesser-name">Password</label>
+                            <input type="text" class="form-control" id="guesser-name" placeholder="Name">
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary guess" guess-value="r">Rock</button>
+                            <button type="button" class="btn btn-secondary guess" guess-value="p">Paper</button>
+                            <button type="button" class="btn btn-secondary guess" guess-value="s">Scissors</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
